@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div class="mainheading">
+        <h>TILE PUZZLE</h>
+        
+    </div>
+
+    <audio id="myplay" src="musicbg.mp3"> </audio>
+
+
+    <ul class="descriptionstyle">
+        <li> For Normal mode a 5X5 Grid will be given with an empty tile,by moving the empty tile make the
+            3X3 grid given above in the center of 5X5.
+        </li>
+        <li> For Medium mode a 6X6 Grid will be given with an empty tile,by moving the empty tile make the
+            4X4 grid given above in the center of 6X6.</li>
+        <li>Select the mode and the game will start</li>
+    </ul>
+
+    <label for="userdetails" class="usernamestyle">USERNAME : </label>
+    <input type="text" id="userdetails" class="inputstyle">
+    <br />
+    <br />
+
+    <button id="normal">Normal mode</button>
+
+    <button id="medium">Medium mode</button>
+
+    <div id="reloadcontainer"> </div>
+    <div id="grid" style="text-align:center;"></div>
+    <div class="viewstyle">
+        <p id="timeview" class="parastyles" style="text-align:left;"></p>
+        <p class="parastyles" id="countertime" style="text-align:left;"> </p>
+        <p id="numb" class="playgridcount" style="text-align:right;"></p>
+        <p id="numbermoves" class="playgridcount" style="text-align:right;"></p>
+        <p id="answer" class="playgridcount" style="text-align:center;"></p>
+        <p id="yourscore" class="playgridcount" style="text-align:center;"> </p>
+    </div>
+
+    <div id="playgrid" style="text-align:center;"></div>
+
+    <p id="scoredisplay"> </p>
+
+    <script src="tiles.js"></script>
+</body>
+
+</html>
